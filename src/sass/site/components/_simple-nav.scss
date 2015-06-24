@@ -1,0 +1,44 @@
+$header-height: 80px;
+
+.header {
+
+  width:100%;
+  height:$header-height;
+  background-color:white;
+
+}
+
+.fixed {
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: 9999;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0 7px 6px -6px $gray;
+  -moz-box-shadow: 0 7px 6px -6px $gray;
+  box-shadow: 0 7px 6px -6px $gray;
+}
+
+.brand-logo {
+  display: inline-block;
+  line-height: $header-height;
+}
+
+.simp-nav__item {
+  float: right;
+  margin-right: 25px;
+  line-height: $header-height;
+  height: $header-height;
+}
+
+.simp-nav__item > a {
+  color: $gray-darker;
+  transition: all 0.5s;
+}
+
+.simp-nav__item > a:hover {
+  color: $brand-primary;
+  letter-spacing: 0.04em;
+}
