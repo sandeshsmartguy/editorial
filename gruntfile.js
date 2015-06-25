@@ -1,7 +1,9 @@
 module.exports = function(grunt) {
     // Project Configuration
     grunt.initConfig({
+
         pkg: grunt.file.readJSON('package.json'),
+
         watch: {
             sass: {
               files: ['src/sass/site/**/*.scss'],
@@ -12,6 +14,7 @@ module.exports = function(grunt) {
               tasks: 'concat'
             }
         },
+
         concat: {
           options: {
             separator: ';'
@@ -21,6 +24,7 @@ module.exports = function(grunt) {
             dest: '<%= pkg.dest %>js/aranca-cn.js'
           }
         },
+
         uglify: {
           dist: {
             files: {
@@ -28,6 +32,7 @@ module.exports = function(grunt) {
             }
           }
         },
+
         sass: {
             dist: {
                 options: {
@@ -40,14 +45,28 @@ module.exports = function(grunt) {
                 }
             }
         },
+
+        browserSync: {
+          bsFiles: {
+            src : [
+              '<%= pkg.dest %>/css/*.css',
+              '<%= pkg.dest %>/js/*.js',
+            ]
+          },
+          options: {
+            watchTask: true,
+            proxy: "dev.aranca.cn"
+          }
+        },
     });
 
     //Load NPM tasks
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-browser-sync');
 
     // Default task(s).
-    grunt.registerTask('default', ['sass', 'concat', 'watch']);
+    grunt.registerTask('default', ['browserSync', 'watch']);
 
 };
