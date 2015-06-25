@@ -16,12 +16,13 @@ $(function(){
   $(window).scroll(function(){
       var originalHeight   = "80px";
       var animateHeightTo = "65px";
+      var classesToAddAndRemove = "fixed box-shadow";
 
       if($(document).scrollTop() > 0)
       {
         if($('.header').data('size') == 'big')
         {
-            $('.header').addClass('fixed');
+            $('.header').addClass(classesToAddAndRemove);
             $(".header .brand-logo, .header .simp-nav__item").css("line-height", animateHeightTo);
             $('.header').data('size','small');
             $('.header').stop().animate({
@@ -33,7 +34,7 @@ $(function(){
       {
         if($('.header').data('size') == 'small')
         {
-            $('.header').removeClass('fixed');
+            $('.header').removeClass(classesToAddAndRemove);
             $(".header .brand-logo, .header .simp-nav__item").css("line-height", originalHeight);
             $('.header').data('size','big');
             $('.header').stop().animate({
