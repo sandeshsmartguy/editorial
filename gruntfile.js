@@ -12,7 +12,12 @@ module.exports = function(grunt) {
             concat: {
               files: ['<%= pkg.dest %>/js/*.js'],
               tasks: 'concat'
-            }
+            },
+            options: {
+              livereload: {
+                port: 9000,
+              }
+            },
         },
 
         concat: {
