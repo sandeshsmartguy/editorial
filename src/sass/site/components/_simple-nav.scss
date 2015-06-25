@@ -4,7 +4,8 @@ $header-height: 80px;
 
   width:100%;
   height:$header-height;
-  background-color:white;
+  background-color:rgb(252, 252, 252);
+  border-bottom: 1px solid white;
 
 }
 
@@ -16,9 +17,9 @@ $header-height: 80px;
 }
 
 .box-shadow {
-  -webkit-box-shadow: 0 7px 6px -6px $gray;
-  -moz-box-shadow: 0 7px 6px -6px $gray;
-  box-shadow: 0 7px 6px -6px $gray;
+  box-shadow: 0 0 18px 0 rgba(46,40,64,0.4);
+  -webkit-box-shadow: 0 0 18px 0 rgba(46,40,64,0.4);
+  -moz-box-shadow: 0 0 18px 0 rgba(46,40,64,0.4);
 }
 
 .brand-logo {
