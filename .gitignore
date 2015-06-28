@@ -22,6 +22,8 @@ craft/storage/backups/*
 # ----------------------------------------------------------------------
 public/assets/uploads/*
 public/assets/css/*
+!public/assets/css/font-awesome.min.css
+
 
 # Misc files
 # ----------------------------------------------------------------------
