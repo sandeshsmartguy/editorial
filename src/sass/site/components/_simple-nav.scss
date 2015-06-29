@@ -25,6 +25,16 @@ $header-height: 80px;
 .brand-logo {
   display: inline-block;
   line-height: $header-height;
+  @media screen and (max-width: $screen-sm-min){
+    display: block;
+    text-align: center;
+  }
+}
+
+.simp-nav {
+  @media screen and (max-width: $screen-sm-min){
+    display: none;
+  }
 }
 
 .simp-nav__item {
