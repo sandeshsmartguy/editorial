@@ -1,6 +1,6 @@
 $header-height: 80px;
 
-.header {
+header {
 
   width:100%;
   height:$header-height;
@@ -13,7 +13,9 @@ $header-height: 80px;
   position:fixed;
   top:0;
   left:0;
-  z-index: 9999;
+  z-index: 2;
+  width: 100%;
+
 }
 
 .box-shadow {
