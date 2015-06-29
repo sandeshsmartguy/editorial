@@ -5,4 +5,13 @@
   -o-background-size: cover;
   background-size: cover;
   min-height: 400px;
+
+  @media screen and (max-width: $screen-sm-min){
+    background: url('/assets/images/cn-banner-mob.jpg') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 330px;
+  }
 }
