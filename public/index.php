@@ -6,6 +6,7 @@ include('../_includes/masthead.html');
 include('../_includes/landing.html');
 include('../_includes/full-banner-a.html');
 include('../_includes/round-icon-badge.html');
+include('../_includes/content-box-3col.html');
 ?>
 <div class="sep50"></div>
 <?php
