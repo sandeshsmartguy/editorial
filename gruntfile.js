@@ -60,7 +60,7 @@ module.exports = function(grunt) {
           },
           options: {
             watchTask: true,
-            proxy: "aranca.editorial.dev"
+            proxy: "aranca.ci.dev"
           }
         },
     });
