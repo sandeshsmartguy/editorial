@@ -6,7 +6,9 @@
 /* Default mode */
 .tabbable-line > .nav-tabs {
   border: none;
-  margin: 0px;
+  margin: 0px 300px;
+  font-size: 17px;
+  font-weight: bold;
 }
 .tabbable-line > .nav-tabs > li {
   margin-right: 2px;
@@ -54,3 +56,35 @@
 .portlet .tabbable-line > .tab-content {
   padding-bottom: 0;
 }
+
+.w-title {
+  font-size: 25px;
+  font-weight: 800;
+  margin: 8px 0;
+  color: #EC752C;
+}
+
+.w-content {
+  border-right: 1px solid #cdcdcd;
+  padding-right: 20px;
+}
+
+.last {
+  padding-right: 20px;
+}
+
+.icon {
+  height: 94px;
+  width: 94px;
+  display: inline-block;
+  font-size: 5em;
+  color: #EC752C
+}
+
+hr.title {
+  position: relative;
+  top: 5px;
+  border-top: 1px solid #cdcdcd;
+}
+
+
