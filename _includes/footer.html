@@ -2,8 +2,10 @@
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript">
       $(function () {
-      $('.btn').popover()
-    })
+      $('[data-toggle="popover"]').popover({
+        animation: true
+      });
+    });
     </script>
     <!-- customized js -->
     <script src="assets/js/aranca-cn.js"></script>
